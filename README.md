@@ -4,16 +4,17 @@
 1. 尽量减少 HTTP 请求 (Make Fewer HTTP Requests) 
 作为第一条，可能也是最重要的一条。根据 Yahoo! 研究团队的数据分析，有很大一部分用户访问会因为这一条而取得最大受益。有几种常见的方法能切实减少 HTTP 请求：
 
-•1) 合并文件，比如把多个 CSS 文件合成一个； 
+    •1) 合并文件，比如把多个 CSS 文件合成一个； 
 
-•2) CSS Sprites 利用 CSS background 相关元素进行背景图绝对定位；参见：CSS Sprites: Image Slicing's Kiss of Death 
+    •2) CSS Sprites 利用 CSS background 相关元素进行背景图绝对定位；参见：CSS Sprites: Image Slicing's Kiss of Death 
 
-•3) 图像地图 
+    •3) 图像地图 
 
-•4) 内联图象 使用 data: URL scheme 在实际的页面嵌入图像数据. 
+    •4) 内联图象 使用 data: URL scheme 在实际的页面嵌入图像数据. 
 
 2. 减少 DNS 查找 (Reduce DNS Lookups)
-    必须明确的一点，DNS 查找的开销是很大的。另外，我倒是觉得这是 Yahoo! 所有站点的通病，Yahoo！主站点可能还不够明显，一些分站点，存在明显的类似问题。对于国内站点来说，如果过多的使用了站外的 Widget ，也很容易引起过多的 DNS 查找问题。
+
+必须明确的一点，DNS 查找的开销是很大的。另外，我倒是觉得这是 Yahoo!       所有站点的通病，Yahoo！主站点可能还不够明显，一些分站点，存在明显的类似问题。对于国内站点来说，如果过多的使用了站外的 Widget ，也很容易引起过多的 DNS 查找问题。
 
 3. 避免重定向 (Avoid Redirects)
      不是绝对的避免，尽量减少。另外，应该注意一些不必要的重定向。比如对 Web 站点子目录的后面添加个 / (Slash) ，就能有效避免一次重定向。http://www.dbanotes.net/arch 与 http://www.dbanotes.net/arch/ 二者之间是有差异的。如果是 Apache 服务器，通过配置 Alias 或mod_rewrite 或是 DirectorySlash 能够消除这个问题。
