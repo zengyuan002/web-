@@ -105,8 +105,6 @@ Cookie 是个很有趣的话题。根据 RFC 2109 的描述，每个客户端最
 这个话题在此前针对 Web 图片服务器的讨论中曾经提及。这里说的 Web 组件(Component)，多指静态文件，比如图片 CSS 等，Yahoo! 的静态文件都在 yimg.com 上，客户端请求静态文件的时候，减少了 Cookie 的反复传输对主域名 (yahoo.com) 的影响。
 从这篇 When the Cookie Crumbles 能看出，MySpace 和 eBay 的 Cookie 都不小的，想必是对用户行为比较关心。eBay 前不久构造了 Personalization Platform ，就是从 Cookie 的限制中跳出来。
 ```
-网页制作poluoluo文章简介：Web 前端性能优化是个大话题，是个值得运维人员持续跟踪的话题，是被很多网站无情忽视的技术。
-
 Web 前端优化最佳实践第四部分面向 CSS。
 
 目前共计有 6 条实践规则。另请参见 Mozilla 开发者中心的文章：Writing Efficient CSS
@@ -171,8 +169,6 @@ Web 前端优化最佳实践之 JavaScript 篇
 
 后记 2)：CSS / JavaScript 都有优化规则。但似乎缺少了对 Flash 的优化实践。
 ```
-网页制作poluoluo文章简介：Web 前端性能优化是个大话题，是个值得运维人员持续跟踪的话题，是被很多网站无情忽视的技术。
-
 Web 前端优化最佳实践第六部分面向 图片(Image)
 
 这部分目前有 4 条规则。在最近的 Velocity 2008 技术大会上，Yahoo! 的 Stoyan Stefanov 做的 Image Optimization: How Many of These 7 Mistakes Are You Making 也非常有参考价值。结合一起说一下。
@@ -220,10 +216,6 @@ Web 前端优化最佳实践第六部分面向 图片(Image)
 --EOF--
 ```
 补充：视觉设计者应该尽量考虑控制图片大小，推荐在 200K 以下。这不是胡说的，参考页面。
-
-网页制作poluoluo文章简介：
-
-Web 前端性能优化是个大话题，是个值得运维人员持续跟踪的话题，是被很多网站无情忽视的技术。
 
 Web 前端优化最佳实践最后一部分是针对移动应用的，其实只是针对 iPhone 的，目前只有两条规则。
 ```
