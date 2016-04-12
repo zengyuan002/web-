@@ -1,7 +1,9 @@
-# web-
+# web前端性能优化
 面向内容的优化规则目前有 10 条。
+
 1. 尽量减少 HTTP 请求 (Make Fewer HTTP Requests) 
 作为第一条，可能也是最重要的一条。根据 Yahoo! 研究团队的数据分析，有很大一部分用户访问会因为这一条而取得最大受益。有几种常见的方法能切实减少 HTTP 请求：
+
 •1) 合并文件，比如把多个 CSS 文件合成一个； 
 •2) CSS Sprites 利用 CSS background 相关元素进行背景图绝对定位；参见：CSS Sprites: Image Slicing's Kiss of Death 
 •3) 图像地图 
