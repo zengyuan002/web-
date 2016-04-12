@@ -1,6 +1,6 @@
 # web前端性能优化
 面向内容的优化规则目前有 10 条。
-
+```
 1. 尽量减少 HTTP 请求 (Make Fewer HTTP Requests) 
 
 作为第一条，可能也是最重要的一条。根据 Yahoo! 研究团队的数据分析，有很大一部分用户访问会因为这一条而取得最大受益。有几种常见的方法能切实减少 HTTP 请求：
@@ -45,13 +45,11 @@
 
 对页面链接的充分测试加上对 Web 服务器 error 日志的不断跟踪能有效减少 404 错误，亦能提升用户体验。值得一提的是，CSS 与 Java Script 引起的 404 错误因为定位稍稍"难"一点而往往容易被忽略。
 这是内容篇的 10 条。应该说具体引导性的内容还不够详细。逐渐会根据自己的理解补充上来。
-
-网页制作poluoluo文章简介：Web 前端性能优化是个大话题，是个值得运维人员持续跟踪的话题，是被很多网站无情忽视的技术。
-
+```
 Web 前端优化最佳实践第二部分面向 Server 。
 
 目前共计有 6 条实践规则。【注，这最多算技术笔记，查看最原始内容，还请访问：Exceptional Performance : Best Practices for Speeding Up Your Web Site 】
-
+```
 1. 使用 CDN (Use a Content Delivery Network)
 
 国内 CDN 的普及还不够。不过我们有独特的电信、网通之间的问题，如果针对这个作优化，基本上也算能收到 CDN 或类似的效果吧(假装如此)。【Tin 说国内 CDN 用的挺多，看看 CDN 厂商的市场就知道了，还没走入寻常百姓家】
@@ -59,6 +57,7 @@ Web 前端优化最佳实践第二部分面向 Server 。
 2. 添加 Expires 或 Cache-Control 信息头 (Add an Expires or a Cache-Control Header)
 
 各个浏览器都有针对的方案, Apache 例子【注意：下面的说明例子还不够精细，具体的环境上还要加一些调整】:
+
 ExpiresActive On
 ExpiresByType image/gif "modification plus 1 weeks"Lighttpd 启用 mod_expire 模块 后：
 $HTTP["url"] =~ "\.(jpg|gif|png)___FCKpd___1quot; {
@@ -72,7 +71,7 @@ location ~* \.(jpg|gif|png)$ {
 }
 
 3. 压缩内容 (Gzip Components)
-
+```
 对于绝大多数站点，这都是必要的一步，能有效减轻网络流量压力。或许有人担心对 CPU 压缩对于 CPU 的影响，放心大胆的整吧，没事儿。Nginx 
 ```
 例子：
@@ -222,7 +221,9 @@ Web 前端优化最佳实践第六部分面向 图片(Image)
 ```
 补充：视觉设计者应该尽量考虑控制图片大小，推荐在 200K 以下。这不是胡说的，参考页面。
 
-网页制作poluoluo文章简介：Web 前端性能优化是个大话题，是个值得运维人员持续跟踪的话题，是被很多网站无情忽视的技术。
+网页制作poluoluo文章简介：
+
+Web 前端性能优化是个大话题，是个值得运维人员持续跟踪的话题，是被很多网站无情忽视的技术。
 
 Web 前端优化最佳实践最后一部分是针对移动应用的，其实只是针对 iPhone 的，目前只有两条规则。
 ```
